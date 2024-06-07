@@ -192,6 +192,8 @@ class DetailHistoryPage : AppCompatActivity() {
                                                     700
                                                 )
                                                 qrCode.setImageBitmap(bitmap)
+                                                findViewById<TextView>(R.id.uniqueCode).text = payment.uniqueCode.toString()
+
                                             }
                                         }
                                         cancelOrderButton.visibility = View.GONE
